@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>📝Editor Box</h2>
+
+    <center>
+        <textarea id="container" placeholder="Type something here📝..."></textarea>
+    </center><br><br>
+<div class="a">  
+
+    <div class="box">
+
+    <h3>Background Color</h3>
+
+    <div class="buttons">
+        <button class="red" onclick="changeBackground('Pink')"></button>
+        <button class="blue" onclick="changeBackground('steelblue')"></button>
+        <button class="green" onclick="changeBackground('seagreen')"></button>
+        <button class="yellow" onclick="changeBackground('lightyellow')"></button>
+        <button class="purple" onclick="changeBackground('mediumpurple')"></button>
+    </div>
+    </div>
+    
+    <div class="box">
+
+    <h3>Text Color</h3>
+
+    <div class="buttons">
+        <button class="red" onclick="changeTextColor('red')"></button>
+        <button class="blue" onclick="changeTextColor('blue')"></button>
+        <button class="green" onclick="changeTextColor('green')"></button>
+        <button class="yellow" onclick="changeTextColor('yellow')"></button>
+        <button class="purple" onclick="changeTextColor('purple')"></button>
+    </div>
+    </div>
+
+    <div class="box">
+
+    <h3>Font Style</h3>
+
+    <div class="font-buttons">
+        <button onclick="changeFont('Arial')">Arial</button>
+        <button onclick="changeFont('serif')">Serif</button>
+        <button onclick="changeFont('sans-serif')">Sans Serif</button>
+    
+        <button onclick="changeFont('cursive')">Cursive</button>
+    </div>
+    </div>
+ </div>   
+
+    <script>
+
+        function changeBackground(color) {
+            document.getElementById("container").style.backgroundColor = color;
+        }
+
+        function changeTextColor(color) {
+            document.getElementById("container").style.color = color;
+        }
+
+        function changeFont(font) {
+            document.getElementById("container").style.fontFamily = font;
+        }
+
+    </script>
+
+</body>
+</html>
